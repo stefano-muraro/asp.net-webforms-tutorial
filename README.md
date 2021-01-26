@@ -6,7 +6,7 @@
 ## SQL Server database
 
 ### How to create database
-Run the script "MyWebApplication/Scripts/SQLServer/CreateTestDB.sql" in Microsoft SQL Server Management Studio.
+Run the script [CreateTestDB.sql](MyWebApplication/Scripts/SQLServer/CreateTestDB.sql) in Microsoft SQL Server Management Studio.
 
 ### How to connect database with Visual Studio project
-Replace the "Data Source" value with your server name in "connectionStrings" tag in Web.config and watch this [tutorial](https://youtu.be/V9r-Gp3uNCE).
+Replace the "Data Source" value with your server name in "connectionStrings" tag in [Web.config](MyWebApplication/Web.config) and watch this [tutorial](https://youtu.be/V9r-Gp3uNCE).
