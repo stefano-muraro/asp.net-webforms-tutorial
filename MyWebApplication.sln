@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplication", "MyWebApplication\MyWebApplication.csproj", "{FAE81C9F-882B-482B-B7C5-D25D728A432D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectFees", "ProjectFees\ProjectFees.csproj", "{427409AC-DFF1-4675-A962-2B1D6F33A3F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectFees", "ProjectFees\ProjectFees.csproj", "{427409AC-DFF1-4675-A962-2B1D6F33A3F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

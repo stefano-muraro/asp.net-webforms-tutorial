@@ -28,7 +28,7 @@ namespace MyWebApplication
                 try
                 {
                     dbConnection.Open();
-                    SqlCommand command = new SqlCommand("SELECT Id, Name, HexCode FROM tblColorHexCodes ORDER BY Id", dbConnection);
+                    SqlCommand command = new SqlCommand("SELECT Id, Name, HexCode FROM Colors ORDER BY Id", dbConnection);
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
                     DataSet dataSet = new DataSet();
                     dataAdapter.Fill(dataSet);
@@ -63,7 +63,7 @@ namespace MyWebApplication
                 try
                 {
                     dbConnection.Open();
-                    string sql = string.Format("DELETE FROM tblColorHexCodes WHERE Id={0}", hdnColorId.Value);
+                    string sql = string.Format("DELETE FROM Colors WHERE Id={0}", hdnColorId.Value);
                     SqlCommand command = new SqlCommand(sql, dbConnection);
                     command.ExecuteNonQuery();
                     gvColors.EditIndex = -1;
@@ -108,7 +108,7 @@ namespace MyWebApplication
                 try
                 {
                     dbConnection.Open();
-                    string sql = string.Format("UPDATE tblColorHexCodes set Name='{0}', HexCode='{1}' WHERE Id={2}", txtName.Text, txtHex.Text, hdnColorId.Value);
+                    string sql = string.Format("UPDATE Colors set Name='{0}', HexCode='{1}' WHERE Id={2}", txtName.Text, txtHex.Text, hdnColorId.Value);
                     SqlCommand command = new SqlCommand(sql, dbConnection);
                     command.ExecuteNonQuery();
                     gvColors.EditIndex = -1;
@@ -134,7 +134,7 @@ namespace MyWebApplication
                 try
                 {
                     dbConnection.Open();
-                    string sql = "INSERT INTO tblColorHexCodes (Name, HexCode) VALUES ('', '');";
+                    string sql = "INSERT INTO Colors (Name, HexCode) VALUES ('', '');";
                     SqlCommand command = new SqlCommand(sql, dbConnection);
                     command.ExecuteNonQuery();
                     gvColors.EditIndex = gvColors.Rows.Count;

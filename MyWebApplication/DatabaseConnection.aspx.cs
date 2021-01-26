@@ -22,7 +22,7 @@ namespace MyWebApplication
                     ltConnectionMessage.Text = "Connection successful";
                     try
                     {
-                        SqlCommand command = new SqlCommand("SELECT Name, HexCode FROM tblColorHexCodes", dbConnection);
+                        SqlCommand command = new SqlCommand("SELECT Name, HexCode FROM Colors", dbConnection);
                         SqlDataReader reader = command.ExecuteReader();
                         if(reader.HasRows)
                         {
